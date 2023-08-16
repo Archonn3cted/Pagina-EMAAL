@@ -1,0 +1,1 @@
+Modelo-protótipo de uma web página estática para apresentação geral do evento EMMAL-2023 (Explorando as Fronteiras da Matemática: Da teoria à prática), ao qual é realizado anualmente na Universidade Federal de Alagoas (UFAL).
