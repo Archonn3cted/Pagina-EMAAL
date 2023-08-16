@@ -2,24 +2,484 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMA²L</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>X EMAAL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/scss/_modal.scss">
+    <link rel="stylesheet" href="/scss/_body.scss">
 </head>
-<body>
-    <header>
-        <img src="logo-removebg-preview.png" alt="Logomarca">
+<body style="background-color: rgb(47, 47, 230);">
+    <header style="background-color: rgb(30, 26, 48);">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center mb-2 mt-2">
+                    <img src="/img/logo.webp" alt="Imagem" class="img-fluid mx-auto d-block w-25 h-auto">
+                </div>
+            </div>
+            <div>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid d-flex">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ações
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://docs.google.com/forms/u/4/d/1nbuLf9QeoLYpVaEoHVFdXf9xWDktaw_c7G2dUg2qEbA/edit?chromeless=1">Pré-inscrição</a></li>
+                                    <li><a class="dropdown-item" href="https://sigaa.sig.ufal.br/sigaa/portais/discente/discente.jsf">Inscrição</a></li>
+                                    <li><a class="dropdown-item" href="https://docs.google.com/forms/d/1LrCNsZXh9teQ8L6-Jgqa-_vNF04gGOFHutSntrVFAbM/edit?chromeless=1">Submissão de Trabalhos</a></li>
+                                  </ul>
+                                </li>
+                            </ul>
+                        </form>
+                        <form class="d-flex" role="search">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Documentos úteis
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://docs.google.com/document/d/1ijDqRFTW4chJUjZ98IJFy55P-uWY_yN5/edit?usp=drive_link&ouid=117998966479761645162&rtpof=true&sd=true" download="">Modelo-apresentação</a></li>
+                                    <li><a class="dropdown-item" href="https://docs.google.com/presentation/d/14zNEK6tlO52qEavN693GLS6chQeCEGPj/edit?usp=drive_link&ouid=117998966479761645162&rtpof=true&sd=true">Modelo-banner</a></li>
+                                    <li><a class="dropdown-item" href="https://docs.google.com/document/d/1Rv8xKnblqKw-wEyjsSwXUc1IpJqjhQoX/edit?usp=drive_link&ouid=117998966479761645162&rtpof=true&sd=true">Modelo-submissão-banner</a></li>
+                                    <li><a class="dropdown-item" href="https://docs.google.com/document/d/1WbZ8VLWzIjl3taDB-Ni_5bj10U5gtU5N/edit?usp=drive_link&ouid=117998966479761645162&rtpof=true&sd=true">Modelo-minicurso</a></li>
+                                  </ul>
+                                </li>
+                            </ul>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section class="content">
-            <h1>Bem-vindo à nossa página web</h1>
-            <p>Esta é uma página de exemplo com um fundo azul e um layout simples.</p>
-        </section>
-    </main>
+    <div class="container mt-4 mb-2">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="/img/faixa.webp" alt="Imagem" class="img-fluid mx-auto w-100 h-90">
+            </div>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2023 UFAL. Todos os direitos reservados.</p>
+    <section class="m-4 pb-4">
+        <div class="row mt-4 mb-2" style="display: flex; justify-content: center;">
+            <div class="col-6" >
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/img/carousel/WhatsApp Image 2023-08-14 at 20.48.50 (1).webp" class="d-block w-100" alt="Imagem">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/img/carousel/WhatsApp Image 2023-08-14 at 20.48.50 (2).webp" class="d-block w-100" alt="Imagem">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/img/carousel/1_11zon.webp" class="d-block w-100" alt="Imagem">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/img/carousel/2_11zon.webp" class="d-block w-100" alt="Imagem">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/img/carousel/3_11zon.webp" class="d-block w-100" alt="Imagem">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/img/carousel/WhatsApp Image 2023-08-14 at 20.48.51.webp" class="d-block w-100" alt="Imagem">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-4 pb-4">
+        <h3 class="text-white">Palestrantes</h3>
+                <div class="container mt-4">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <img src="/img/palestrantes/juliana.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 1" style="border-radius: 6px;">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">Juliana Roberta Theodoro de Lima</h6>
+                                </div>
+                                <div class="m-2 d-grid gap-2">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                        Saiba mais
+                                    </button>
+                                </div>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Juliana Roberta de Lima</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        Professora, pesquisadora, vice-diretora do Instituto de Matemática e conselheira dos cursos de Exatas da Editora da Ufal (Edufal).
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="/img/palestrantes/carloney.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 2" style="border-radius: 6px;">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Carloney Alves de Oliveira</h6>
+                            </div>
+                            <div class="m-2 d-grid gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    Saiba mais
+                                </button>
+                            </div>
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel2">Carloney Alves de Oliveira</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Pós-Doutor em Educação (UFS), Doutor e Mestre em Educação (UFAL) e Graduação em Licenciatura Plena em Matemática pela Universidade Estadual de Feira de Santana (UEFS).
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/img/palestrantes/elaine.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 3" style="border-radius: 6px;">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Elaine Sampaio de Souza Carlos</h6>
+                            </div>
+                            <div class="m-2 d-grid gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                    Saiba mais
+                                </button>
+                            </div>
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel3">Elaine Sampaio de Souza Carlos</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Possui licenciatura em matemática pela Universidade Estadual Vale do Acaraú - UVA, mestrado em matemática pela Universidade Federal do Ceará - UFC. Atualmente é professora assistente do curso de licenciatura em matemática da Universidade Estadual Vale do Acaraú, na cidade de Sobral - Ceará e cursa doutorado em matemática pela Universidade Federal de Alagoas - UFAL, na área de Geometria Diferencial.
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/img/palestrantes/joao.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 4" style="border-radius: 6px;">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">João Ferreira Da Silva Neto</h6>
+                            </div>
+                            <div class="m-2 d-grid gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                    Saiba mais
+                                </button>
+                            </div>
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel4">João Ferreira Da Silva Neto</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Doutor em Educação na Universidade Federal do Rio Grande do Sul - UFRGS (2021); Mestre em Educação Matemática e Tecnológica na Universidade Federal de Pernambuco - UFPE (2012); possui Especialização em Programação do Ensino da Matemática pela Universidade de Pernambuco - UPE- (2000); é licenciado em Matemática pela Universidade Estadual de Alagoas (1998).
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/img/palestrantes/manoel.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 5t" syle="border-radius: 6px;">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Manoel Messias da Silva Júnior</h6>
+                            </div>
+                            <div class="m-2 d-grid gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                    Saiba mais
+                                </button>
+                            </div>
+                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel5">Manoel Messias da Silva Júnior</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Licenciado em Matemática pela Universidade Federal de Alagoas - Campus Arapiraca e Mestrando em Matemática pela Universidade Federal da Paraíba, onde estuda Teoria de Singularidades.
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/img/palestrantes/rinaldo.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 6" style="border-radius: 6px;">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Rinaldo Vieira da Silva Júnior</h6>
+                            </div>
+                            <div class="m-2 d-grid gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                                    Saiba mais
+                                </button>
+                            </div>
+                            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel6">Rinaldo Vieira da Silva Júnior</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Professor do magistério superior na UFAL desde 2007. Coordenador do PROFMAT Arapiraca.
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/img/palestrantes/simone.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 7" style="border-radius: 6px;">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Simone Silva da Fonseca</h6>
+                            </div>
+                            <div class="m-2 d-grid gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                    Saiba mais
+                                </button>
+                            </div>
+                            <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel7">Simone Silva da Fonseca</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Doutora em Educação pela Universidade Federal de Sergipe (2020). Mestre em Ensino de Ciências e Matemática pela Universidade Federal de Sergipe (2015). Graduada em Matemática Licenciatura pela Universidade Federal de Alagoas (2013). Especialista em Novas Tecnologias no Ensino de Matemática pela Universidade Federal Fluminense (2017). Diretora Regional da Sociedade Brasileira de Educação Matemática - Regional Alagoas (2020-2023). Especialista em Direitos Infanto-Juvenis no ambiente escolar: escola que protege pela Universidade Federal de Sergipe (2015).
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/palestrantes/wagner.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 8" style="border-radius: 6px;">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Wagner Xavier Ribeiro</h6>
+                            </div>
+                            <div class="m-2 d-grid gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                    Saiba mais
+                                </button>
+                            </div>
+                            <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel8">Wagner Xavier Ribeiro</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Professor do Instituto Federal de Alagoas, tem como área de pesquisa Geometria Diferencial e Análise Geométrica.
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/img/palestrantes/arlyson.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 9" style="border-radius: 6px;">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Arlyson Alves do Nascimento</h6>
+                            </div>
+                            <div class="m-2 d-grid gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+                                    Saiba mais
+                                </button>
+                            </div>
+                            <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel9" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel9">Arlyson Alves do Nascimento</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Possui graduação em Licenciatura Plena em Matematica pela Universidade Regional do Cariri (2000) e mestrado em Matemática pela Universidade Federal da Paraíba (2005). Tem experiência na área de Matemática, com ênfase em Matemática, atuando principalmente na área de Álgebra.
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/img/palestrantes/eben.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 10" style="border-radius: 6px;">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Eben Alves da Silva</h6>
+                            </div>
+                            <div class="m-2 d-grid gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+                                    Saiba mais
+                                </button>
+                            </div>
+                            <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel10" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel10">Eben Alves da Silva</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Possui graduação em Licenciatura em Matemática pela Universidade Federal de Alagoas (2006), mestrado em Matemática pela Universidade Federal de Alagoas (2009) e doutorado em Matemática Aplicada pela Universidade Estadual de Campinas (2018).
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/img/palestrantes/lucielly.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 11" style="border-radius: 6px;">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Lucielly de Oliveira Praxedes</h6>
+                            </div>
+                            <div class="m-2 d-grid gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal11">
+                                    Saiba mais
+                                </button>
+                            </div>
+                            <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel11" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel11">Lucielly de Oliveira Praxedes</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Formada no curso de Licenciatura em Matemática neste ano, na área de Educação Matemática. Foi residente do Programa de Residência Pedagógica, monitora de Geometria Analítica, Ex- Participante dos Projetos Fly- Libras e Mulheres nas Ciências Exatas. No decorrer da graduação sempre teve interesse pela educação matemática e como fazer para inovar a mesma. Seja com a utilização das TDICs, Jogos, paródias e dentre outros. Atualmente é professora da SEMED de Coité do Nóia, e faz parte do apoio da gestão escolar da escola Prefeito José Custódio.
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+ 
+    <footer class="bg-dark text-light text-center py-2">
+        <h3>Para mais informações, acesse:</h3>
+        <div class="container mt-2 mb-2 d-flex justify-content-center">
+            <div class="row m-2">
+                <div class="col-4 col-sm-4 mb-3">
+                    <a href="https://www.facebook.com/quinto.emmal.3?mibextid=b06tZ0">
+                        <img src="/img/footer/face_logo.png" alt="Página do Facebook" class="img-fluid mx-auto" style="max-height: 20px; width: auto;">
+                    </a>
+                </div>
+                <div class="col-4 col-sm-4 mb-3">
+                    <a href="https://instagram.com/x_emaal?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
+                        <img src="/img/footer/insta_logo.png" alt="Instagram" class="img-fluid mx-auto" style="max-height: 20px; width: auto;">
+                    </a>
+                </div>
+                <div class="col-4 col-sm-4">
+                    <a href="8emaal@gmail.com">
+                        <img src="/img/footer/gmail_logo.png" alt="Email" class="img-fluid mx-auto" style="max-height: 20px; width: auto;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 mb-1">&copy; 2023 UFAL. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </body>
 </html>
