@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="/scss/_body.scss">
 </head>
 <body style="background-color: rgb(47, 47, 230);">
-    <header style="background-color: rgb(30, 26, 48);">
+    <header style="background-color: rgb(223, 223, 231);">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center mb-2 mt-2">
-                    <img src="/img/logo.webp" alt="Imagem" class="img-fluid mx-auto d-block w-25 h-auto">
+                    <a class="nav-link" href="/index.html">
+                        <img src="/img/nova_logo.webp" alt="Imagem" class="img-fluid mx-auto d-block w-50 h-auto">
+                    </a>
                 </div>
             </div>
             <div>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <nav class="navbar navbar-expand-lg bg-info">
                     <div class="container-fluid d-flex">
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -26,7 +28,7 @@
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
                           </li>
                         </ul>
                         <form class="d-flex" role="search">
@@ -75,7 +77,7 @@
 
     <section class="m-4 pb-4">
         <div class="row mt-4 mb-2" style="display: flex; justify-content: center;">
-            <div class="col-6" >
+            <div class="col-10" >
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -122,34 +124,34 @@
         <h3 class="text-white">Palestrantes</h3>
                 <div class="container mt-4">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card">
-                                <img src="/img/palestrantes/juliana.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 1" style="border-radius: 6px;">
-                                <div class="card-body text-center">
-                                    <h6 class="card-title">Juliana Roberta Theodoro de Lima</h6>
-                                </div>
-                                <div class="m-2 d-grid gap-2">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                                        Saiba mais
-                                    </button>
-                                </div>
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Juliana Roberta de Lima</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Professora, pesquisadora, vice-diretora do Instituto de Matemática e conselheira dos cursos de Exatas da Editora da Ufal (Edufal).
-                                        </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                        </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="/img/palestrantes/juliana.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 1" style="border-radius: 6px;">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Juliana Roberta Theodoro de Lima</h6>
+                            </div>
+                            <div class="m-2 d-grid gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                    Saiba mais
+                                </button>
+                            </div>
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel2">Juliana Roberta Theodoro de Lima</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                                     </div>
+                                    <div class="modal-body">
+                                        Professora, pesquisadora, vice-diretora do Instituto de Matemática e conselheira dos cursos de Exatas da Editora da Ufal (Edufal).
                                     </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 mb-4">
@@ -244,7 +246,7 @@
 
                     <div class="col-12 col-md-4 mb-4">
                         <div class="card">
-                            <img src="/img/palestrantes/manoel.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 5t" syle="border-radius: 6px;">
+                            <img src="/img/palestrantes/manoel.webp" class="img-fluid mx-auto d-block w-25 h-auto mt-2" alt="Foto do Palestrante 5" syle="border-radius: 6px;">
                             <div class="card-body text-center">
                                 <h6 class="card-title">Manoel Messias da Silva Júnior</h6>
                             </div>
